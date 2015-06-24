@@ -10,6 +10,12 @@ Cookbook uses apt and chef-sugar.
 
     include_recipe "qgis::default"
 
+# effect
+
+installs the following 
+
+     qgis python-qgis qgis-plugin-grass qgis-plugin-grass-common grass
+
 ## Contributing
 
 

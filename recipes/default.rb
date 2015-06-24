@@ -25,6 +25,6 @@ if ubuntu_after_or_at_saucy?
     distribution node['lsb']['codename']
   end
 
-  %w{ qgis python-qgis qgis-plugin-grass }.each { |p| package p }
+  %w{ qgis python-qgis qgis-plugin-grass qgis-plugin-grass-common grass }.each { |p| package p }
 
 end
