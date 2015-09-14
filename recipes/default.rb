@@ -13,7 +13,7 @@ if ubuntu_after_or_at_saucy?
   apt_repository 'qgis' do
     uri   'http://qgis.org/ubuntugis/'
     components ['main']
-    key 'DD45F6C3'
+    key 'D71472C4'
     keyserver 'keyserver.ubuntu.com'
     distribution node['lsb']['codename']
     action [ :remove, :add ]
@@ -22,6 +22,8 @@ if ubuntu_after_or_at_saucy?
   apt_repository 'ubuntugis-unstable' do
     uri 'ppa:ubuntugis/ubuntugis-unstable'
     components ['main']
+    key '314DF160'
+    keyserver 'keyserver.ubuntu.com'
     distribution node['lsb']['codename']
   end
 
