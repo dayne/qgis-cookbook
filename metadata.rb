@@ -6,6 +6,7 @@ description 'Installs/Configures qgis'
 long_description 'Installs/Configures qgis'
 version '0.1.2'
 source_url "https://github.com/dayne/qgis-cookbook"
+issues_url "https://github.com/dayne/qgis-cookbook/issues"
 
 supports 'ubuntu', '>= 14.04'
 
