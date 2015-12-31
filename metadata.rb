@@ -4,7 +4,7 @@ maintainer_email 'broderson@gmail.com'
 license 'Apache 2.0'
 description 'Installs/Configures qgis'
 long_description 'Installs/Configures qgis'
-version '0.1.2'
+version '0.1.3'
 source_url "https://github.com/dayne/qgis-cookbook"
 issues_url "https://github.com/dayne/qgis-cookbook/issues"
 

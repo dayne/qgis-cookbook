@@ -16,7 +16,6 @@ if ubuntu_after_or_at_saucy?
     key 'D71472C4'
     keyserver 'keyserver.ubuntu.com'
     distribution node['lsb']['codename']
-    action [ :remove, :add ]
   end
 
   apt_repository 'ubuntugis-unstable' do
