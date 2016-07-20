@@ -1,6 +1,6 @@
 # qgis
 
-This cookbook installs QGIS 2.10 or newer (whatever is in the official qgis repo) for Ubuntu 14.04 or later.  
+This cookbook installs latest long term release (LTR) of QGIS. Tested and  works on Ubuntu 14.04 and 16.04
 
     cookbook "qgis"
 
