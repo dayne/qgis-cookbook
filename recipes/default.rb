@@ -9,15 +9,6 @@ include_recipe 'chef-sugar::default'
 include_recipe 'apt::default'
 
 if ubuntu_after_or_at_saucy?
-
-  apt_repository 'qgis' do
-    uri   'http://qgis.org/ubuntugis/'
-    components ['main']
-    key 'D71472C4'
-    keyserver 'keyserver.ubuntu.com'
-    distribution node['lsb']['codename']
-  end
-
   apt_repository 'ubuntugis-unstable' do
     uri 'ppa:ubuntugis/ubuntugis-unstable'
     components ['main']
@@ -26,6 +17,5 @@ if ubuntu_after_or_at_saucy?
     distribution node['lsb']['codename']
   end
 
-  %w{ qgis python-qgis qgis-plugin-grass qgis-plugin-grass-common grass }.each { |p| package p }
-
+  package %w{ qgis python-qgis qgis-plugin-grass qgis-plugin-grass-common grass }
 end
