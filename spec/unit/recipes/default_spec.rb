@@ -18,3 +18,16 @@ describe 'qgis::default' do
     end
   end
 end
+
+describe 'qgis::centos' do
+  context 'When all attributes are default, on an ubuntu platform' do
+    let(:chef_run) do
+      runner = ChefSpec::ServerRunner.new.(platform: 'centos')
+      runner.converge(described_recipe)
+    end
+
+    it 'converges successfully' do
+      chef_run # This should not raise an error
+    end
+  end
+end
