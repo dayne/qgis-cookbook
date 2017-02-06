@@ -9,7 +9,7 @@ require 'spec_helper'
 describe 'qgis::default' do
   context 'When all attributes are default, on an ubuntu platform' do
     let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new.(platform: 'ubuntu')
+      runner = ChefSpec::ServerRunner.new.call(platform: 'ubuntu')
       runner.converge(described_recipe)
     end
 
@@ -22,7 +22,7 @@ end
 describe 'qgis::centos' do
   context 'When all attributes are default, on an ubuntu platform' do
     let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new.(platform: 'centos')
+      runner = ChefSpec::ServerRunner.new.call(platform: 'centos')
       runner.converge(described_recipe)
     end
 
