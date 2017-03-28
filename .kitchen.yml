@@ -10,22 +10,9 @@ provisioner:
 
 platforms:
   - name: ubuntu-16.04
-  - name: ubuntu-14.04
   - name: ubuntu-16.10
-  - name: centos-6.8
 
 suites:
   - name: default
     run_list:
       - recipe[qgis::default]
-    attributes:
-    excludes:
-      - centos-6.8
-  - name: centos
-    run_list:
-      - recipe[qgis::default]
-    excludes:
-      - ubuntu-14.04
-      - ubuntu-16.04
-      - ubuntu-16.10
-    attributes:

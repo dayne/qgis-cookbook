@@ -1,6 +1,12 @@
+## 0.3.1 (2016-03-27)
+
+* Pointing to the official http://qgis.org/debian Latest Release
+* Focusing test kitchen on Ubuntu only (removed centos tests)
+* Removed dependency on `chef-sugar`
+
 ## 0.1.3: (2015-12-30)
 
-* removing the `action [ :remove, :add ]` so repo isn't removed/added 
+* removing the `action [ :remove, :add ]` so repo isn't removed/added
 each chef run to fix Issue #2 reported by @teknofire
 
 ## 0.1.2: (2015-08-14)

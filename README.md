@@ -1,10 +1,10 @@
 # qgis
 
-This cookbook installs latest long term release (LTR) of QGIS. Tested and works on Ubuntu 14.04 and 16.04
+This cookbook installs latest release of QGIS for Debian/Ubuntu. Tested and works on Ubuntu 16.04 and 16.10
 
     cookbook "qgis"
 
-Cookbook uses apt and chef-sugar.  
+Cookbook depends on and uses the [apt](https://supermarket.chef.io/cookbooks/apt) cookbook.
 
 # usage
 
@@ -12,7 +12,7 @@ Cookbook uses apt and chef-sugar.
 
 # effect
 
-installs the following 
+installs the following
 
      qgis python-qgis qgis-plugin-grass qgis-plugin-grass-common grass
 
@@ -25,7 +25,7 @@ Dive in and expand/fix this through issues, comments, pull requests.
 
 Authors: Dayne Broderson & Will Fisher
 
-Contributers: 
+Contributers:
 
 * Dayne Broderson - https://github.com/dayne
 * Will Fisher - https://github.com/teknofire
