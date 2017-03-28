@@ -29,3 +29,9 @@ Contributers:
 
 * Dayne Broderson - https://github.com/dayne
 * Will Fisher - https://github.com/teknofire
+
+##  Note to self
+
+upload command to supermarket:
+
+`knife cookbook site share qgis -o ../:.`
