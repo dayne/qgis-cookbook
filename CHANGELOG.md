@@ -1,3 +1,7 @@
+## 0.3.1 (2016-07-19)
+* update to latest public fingerprint for the qgis repo CAEB3DC3BDF7FB45 
+* https://www.qgis.org/en/site/forusers/alldownloads.html
+
 ## 0.3.1 (2016-03-27)
 
 * Pointing to the official http://qgis.org/debian Latest Release

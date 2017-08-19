@@ -12,7 +12,7 @@ if node['platform_family'] == 'debian'
     uri 'http://qgis.org/debian/'
     components ['main']
     keyserver 'keyserver.ubuntu.com'
-    key '073D307A618E5811'
+    key 'CAEB3DC3BDF7FB45'
     action :add
   end
 
